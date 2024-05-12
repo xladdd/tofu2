@@ -55,7 +55,7 @@ export const Recipe = ({ recipeData, recipeNo }) => {
 
 // Custom component for timer links
 const TimerLink = ({ children, href }) => {
-  const minutes = href;
+  //const minutes = href;
 
   return (
     <span className="timerTrigger">
