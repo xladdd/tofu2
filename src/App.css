@@ -136,19 +136,23 @@ nav #border {
   display: grid; 
   grid-template: repeat(4, 30px) / repeat(2, 250px);
   margin-left: 100px;
-  gap: 10px; /* Adjust gap between items */
+  gap: 12px; /* Adjust gap between items */
   overflow-x: auto; /* Enable horizontal scrolling */
   overflow-y: hidden; /* Hide vertical scrollbar */
   grid-auto-flow: column;
   overflow: hidden;
-  text-decoration: none;
-  list-style-type: none; /* Remove bullets from list items */
   color: #3b3b3b;
 }
 
 .menuItem {
   text-decoration: none;
   color: #3b3b3b;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  text-align: left;
 }
 
 #hide-menu {

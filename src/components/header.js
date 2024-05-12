@@ -44,17 +44,15 @@ export const Header = ({ scrollData, recipeData, onRecipeClick }) => {
             <div key={category} className="navSection">
               <h1>{category}</h1>
               {/* Render recipe titles as links under each category */}
-              <ul className="menuList">
+              <div className="menuList">
                 {recipeData
                   .filter((recipe) => recipe.category === category)
                   .map((recipe) => (
-                    <li key={recipe.id}>
-                      <a className="menuItem" href="#" onClick={() => onRecipeClick(recipe.id)}>
+                    <button className="menuItem" href="#" onClick={() => onRecipeClick(recipe.id)}>
                         {recipe.title.toLowerCase()}!
-                      </a>
-                    </li>
+                    </button>
                   ))}
-              </ul>
+              </div>
             </div>
           ))}
 
