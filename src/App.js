@@ -75,7 +75,7 @@ function App() {
     };
     fetchRecipeData();
     fetchScrollData();
-  }, []); // Ensure this effect runs only once on component mount
+  }, [scrollData]); // Ensure this effect runs only once on component mount
 
   // Handle loading state
   if (loading) {
